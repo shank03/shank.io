@@ -64,3 +64,28 @@ function sendEmail() {
     document.location.href = "mailto:shashank.verma2002@gmail.com?subject=" + encodeURIComponent(sub) + "&body=" + encodeURIComponent(msg);
 }
 document.getElementById('contact_submit').addEventListener('click', sendEmail);
+
+
+const texts = ["Software Engineer", "Full-Stack Developer", "Android Developer"];
+let index = 0;
+let count = 0;
+
+const aboutArea = document.getElementById('dynamic-txt');
+if (aboutArea) {
+    (function textAnimation() {
+        if (count === texts[index].length) {
+            count = 0;
+            index++;
+        }
+        if (index === texts.length) {
+            index = 0;
+        }
+
+        aboutArea.innerHTML = texts[index].slice(0, ++count);
+        if (count === texts[index].length) {
+            setTimeout(textAnimation, 1000);
+        } else {
+            setTimeout(textAnimation, 200);
+        }
+    }());
+}

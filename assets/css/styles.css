@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 :root {
     --header-height: 3rem;
     --font-semi: 600;
@@ -206,6 +207,38 @@ img {
 
 .home__title-color {
     color: var(--first-color);
+}
+
+.wrapper {
+    height: 50px;
+    display: inline-flex;
+}
+
+.cursor {
+    position: relative;
+}
+
+.cursor::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    width: 5px;
+    margin-top: 5px;
+    height: 80%;
+    border-right: 5px solid #1A73E8;
+    animation: blink 1s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .home__social {
@@ -470,6 +503,23 @@ img {
     }
     .contact__container {
         justify-items: center;
+    }
+    .wrapper {
+        height: 80px;
+        display: inline-flex;
+    }
+    .cursor {
+        position: relative;
+    }
+    .cursor::after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        width: 5px;
+        margin-top: 10px;
+        height: 80%;
+        border-right: 5px solid #1A73E8;
+        animation: blink 1s infinite ease;
     }
 }
 
