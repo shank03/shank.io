@@ -295,6 +295,10 @@ img {
     border-radius: .5rem;
 }
 
+.download_button {
+    margin-top: 20px;
+}
+
 .skills__container {
     row-gap: 2rem;
     text-align: center;
