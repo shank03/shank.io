@@ -525,6 +525,9 @@ img {
         border-right: 5px solid #1A73E8;
         animation: blink 1s infinite ease;
     }
+    .download_button {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
