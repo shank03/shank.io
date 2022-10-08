@@ -7,7 +7,7 @@
 
 :root {
     --first-color: #1A73E8;
-    --second-color: #0E2431;
+    --second-color: #DEDEDE;
 }
 
 :root {
@@ -46,6 +46,8 @@
 }
 
 html {
+    background-color: #121212;
+
     scroll-behavior: smooth;
 }
 
@@ -139,7 +141,7 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #fff;
+    background-color: #121212;
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
@@ -159,7 +161,7 @@ img {
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: white;
+        background-color: #121212;
         box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
         transition: .5s;
     }
@@ -334,6 +336,7 @@ img {
 }
 
 .skills__data {
+    background-color: #242424;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -342,7 +345,7 @@ img {
     padding: .5rem 1rem;
     margin-bottom: var(--mb-2);
     border-radius: .5rem;
-    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    box-shadow: 0 4px 25px rgba(143, 143, 143, 0.15);
 }
 
 .skills__icon {
@@ -400,19 +403,21 @@ img {
 }
 
 .work__img {
+    background-color: #242424;
     padding: 16rem, 16rem, 16rem, 16rem;
-    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    box-shadow: 0 4px 25px rgba(143, 143, 143, 0.15);
     border-radius: .5rem;
     overflow: hidden;
 }
 
 .work__img img {
+    background-color: white;
     transition: 1s;
     cursor: pointer;
 }
 
 .work__img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.035);
 }
 
 .work__info {
